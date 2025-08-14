@@ -66,7 +66,13 @@ body {
 .start-btn:hover {
     background-color: #5d0cbb;
 }
-
+.header-btn {
+    background-color: #25D838;
+    color: #ffffff;
+}
+.header-btn:hover {
+    background-color: #1bbb2b;
+}
 .btn-gradient {
     background-color: #ffffff;
     color: #710FD8;
@@ -114,4 +120,17 @@ body {
 
 body.modal-open {
   overflow: hidden !important;
+}
+
+.header {
+    border-bottom: 1px solid #30343434;
+    box-shadow: 0 12px 12px #0000000F;
+    position: fixed;
+    top: -100px; 
+    width: 100%;
+    transition: top 0.3s;
+}
+
+.header.visible {
+    top: 0;
 }
